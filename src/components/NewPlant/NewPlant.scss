@@ -1,0 +1,156 @@
+.section__new {
+    position: relative;
+    margin-bottom: 24px;
+
+    &__img{
+        margin-top: 48px;
+        height: 36px;
+    }
+
+    &__title {
+        font-family: Poppins,sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        top: 56px;
+        left: 15px;
+    }
+}
+
+.new__plant {
+    display: flex;
+    flex-direction: column;
+
+    &__date {
+        font-family: Poppins,sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: left;
+        color: #ADB8C8;
+    }
+
+    &__title {
+        font-family: Poppins, sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: 0;
+        text-align: left;
+    }
+
+    &__description {
+        font-family: Poppins, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: left;
+        color: #78787A;
+    }
+
+    &__img {
+        height: 364px;
+        margin-right: 32px;
+    }
+
+    &__icon {
+        display: flex;
+    }
+}
+
+@media (max-width: 375px) {
+    .section__new {
+        position: relative;
+        margin-bottom: 16px;
+
+        &__img{
+            margin-top: 16px;
+            height: 36px;
+        }
+
+        &__title {
+            font-family: Poppins,sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 24px;
+            left: 15px;
+        }
+    }
+
+    .new__plant {
+        &__date {
+            font-family: Poppins, sans-serif;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0;
+            text-align: left;
+            color: #ADB8C8;
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        &__title {
+            font-family: Poppins,sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: 0;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+
+        &__description {
+            font-family: Poppins,sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0;
+            text-align: left;
+            color: #78787A;
+        }
+
+        &__img {
+            height: 364px;
+            margin-right: 32px;
+        }
+
+        &__icon {
+            display: flex;
+        }
+    }
+
+    .new__plant__img {
+        height: 246px;
+        margin: 0;
+    }
+
+    .container__section__new {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .new__plant__icon {
+        display: flex;
+        flex-direction: column;
+    }
+}
