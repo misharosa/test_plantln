@@ -1,10 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.dd900466.css",
-    "main.js": "./static/js/main.1bf70634.js",
+    "main.js": "./static/js/main.5e01be31.js",
     "static/media/advertising.svg": "./static/media/advertising.2668d4c04dbfffd5ea3f109ff193a4af.svg",
-    "static/media/Professional Repot_2.png": "./static/media/Professional Repot_2.9c5b585d706c80af4c79.png",
-    "static/media/Professional Repot_1.png": "./static/media/Professional Repot_1.9c921ebe839bdd1a0437.png",
     "static/media/girlInBushes.svg": "./static/media/girlInBushes.77831221ed07caaa43da1ba592b25d5c.svg",
     "index.html": "./index.html",
     "static/media/burger.svg": "./static/media/burger.32a4a73131a0a1381ddee6d57455973b.svg",
@@ -12,10 +10,10 @@
     "static/media/search.svg": "./static/media/search.282e9ddb30d2a470eb89e45e22d81a37.svg",
     "static/media/Rectangle 223.svg": "./static/media/Rectangle 223.51ad685ac412d75c0b3cd26d889efdda.svg",
     "main.dd900466.css.map": "./static/css/main.dd900466.css.map",
-    "main.1bf70634.js.map": "./static/js/main.1bf70634.js.map"
+    "main.5e01be31.js.map": "./static/js/main.5e01be31.js.map"
   },
   "entrypoints": [
     "static/css/main.dd900466.css",
-    "static/js/main.1bf70634.js"
+    "static/js/main.5e01be31.js"
   ]
 }
