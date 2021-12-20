@@ -5,7 +5,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import girlInBushes from "../../img/All/girlInBushes.svg";
 import './header.scss'
 
-export const Header = ({ temp, city, country }) => {
+export const Header = ({ temp, city, country, setValue, value }) => {
     return (
         <>
             <header className="header-content">
@@ -14,6 +14,8 @@ export const Header = ({ temp, city, country }) => {
                     <div className="header__weather__desktop">{`${city}, ${country} ${Math.round(temp)}°C`}</div>
                     <div className="header__weather__mobile">Tips & Tricks selected specially for you!</div>
                     <TextField
+                        value={value}
+                        onChange={(e) => setValue(e.target.value)}
                         label="Search"
                         className="header__input"
                         InputProps={{
