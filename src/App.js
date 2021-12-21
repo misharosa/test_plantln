@@ -47,7 +47,7 @@ export function App() {
         setTemp(data.main.temp)
         setCity(data.name)
         setCountry(data.sys.country)
-    }, [setTemp,setCity,setCountry])
+    }, [setTemp, setCity, setCountry])
 
   return (
     <body className="App">

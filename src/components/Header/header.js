@@ -8,10 +8,14 @@ import './header.scss'
 export const Header = ({ temp, city, country, setValue, value }) => {
     return (
         <>
+            <div className="switch">
+                <div className="switch__item">Home</div>
+                <div className="switch__item">Blog</div>
+            </div>
             <header className="header-content">
                 <div className="header">
                     <div className="header__title">Stay always tuned with planting trends</div>
-                    <div className="header__weather__desktop">{`${city}, ${country} ${Math.round(temp)}°C`}</div>
+                    <div className="header__weather__desktop">{`Current temperature is: ${Math.round(temp)}°C`}</div>
                     <div className="header__weather__mobile">Tips & Tricks selected specially for you!</div>
                     <TextField
                         value={value}

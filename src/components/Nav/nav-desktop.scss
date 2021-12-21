@@ -1,0 +1,48 @@
+.nav__desktop {
+  font-family: Poppins,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: right;
+  display: flex;
+  width: 100%;
+  padding: 20px 6px 20px 158px;
+  background-color: #fff;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  &-item {
+    list-style: none;
+    margin-left: 24px;
+    cursor: pointer;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+
+    &-search {
+      height: 23px;
+      cursor: pointer;
+    }
+    &-user {
+      height: 24px;
+      margin-left: 39px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .nav__desktop {
+    display: none;
+  }
+}
+
+
