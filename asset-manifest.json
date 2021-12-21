@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.dd900466.css",
-    "main.js": "./static/js/main.22f45e4e.js",
+    "main.css": "./static/css/main.06b322ce.css",
+    "main.js": "./static/js/main.243f8829.js",
     "static/media/advertising.svg": "./static/media/advertising.2668d4c04dbfffd5ea3f109ff193a4af.svg",
     "static/media/girlInBushes.svg": "./static/media/girlInBushes.77831221ed07caaa43da1ba592b25d5c.svg",
     "index.html": "./index.html",
+    "static/media/user.svg": "./static/media/user.1ede28b5846a14689aee0d930700cd34.svg",
     "static/media/burger.svg": "./static/media/burger.32a4a73131a0a1381ddee6d57455973b.svg",
     "static/media/Union.svg": "./static/media/Union.93f87d4827e274ff40772ee8a64d5cc9.svg",
     "static/media/search.svg": "./static/media/search.282e9ddb30d2a470eb89e45e22d81a37.svg",
     "static/media/Rectangle 223.svg": "./static/media/Rectangle 223.51ad685ac412d75c0b3cd26d889efdda.svg",
-    "main.dd900466.css.map": "./static/css/main.dd900466.css.map",
-    "main.22f45e4e.js.map": "./static/js/main.22f45e4e.js.map"
+    "main.06b322ce.css.map": "./static/css/main.06b322ce.css.map",
+    "main.243f8829.js.map": "./static/js/main.243f8829.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd900466.css",
-    "static/js/main.22f45e4e.js"
+    "static/css/main.06b322ce.css",
+    "static/js/main.243f8829.js"
   ]
 }
