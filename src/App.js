@@ -10,7 +10,7 @@ import { PlantsList } from "./components/PlantsList/PlantsList";
 import { Advertising } from "./components/Advertising/advertising";
 
 export function App() {
-    const [plants, setPlants] = useState(Plants.slice(3))
+    const [plants, setPlants] = useState(Plants.slice(0,-3))
     const [temp, setTemp] = useState(0)
     const [city, setCity] = useState(undefined)
     const [country, setCountry] = useState(undefined)
@@ -26,7 +26,7 @@ export function App() {
 
     const filteredPlants = useMemo( () => {
        return plants.filter(plant => {
-           if ( (plant.title).toLowerCase().includes((value).toLowerCase())
+           if ((plant.title).toLowerCase().includes((value).toLowerCase())
                || (plant.description).toLowerCase().includes((value).toLowerCase())) {
                return plant
            }
@@ -35,8 +35,8 @@ export function App() {
 
     const fetchMoreData = () => {
            setTimeout(() => {
-               setPlants(prev => prev.concat(prev.slice(3, 9)))
-           }, 800);
+               setPlants(prev => plants.slice(0, 6).concat(prev))
+           }, 300);
     };
 
     const getWeather = useCallback(async () => {
@@ -65,18 +65,21 @@ export function App() {
             {plants.length &&
             <>
                 {!!filteredPlants.length &&
-                <NewPlant plants={filteredPlants}/>
+                <NewPlant plants={filteredPlants.slice(-1)}/>
                 }
 
                 {filteredPlants.length >= 3 &&
-                <TopPlants plants={filteredPlants}/>
+                <TopPlants plants={filteredPlants.slice(-3,-1)}/>
                 }
-
-                <PlantsList
-                    plants={filteredPlants.slice(3,9)}
-                />
+                {
+                    filteredPlants.length > 3 &&
+                    <PlantsList plants={filteredPlants.slice(0,6)}/>
+                }
                 <Advertising />
-                <PlantsList plants={filteredPlants.slice(3,9)}/>
+                {
+                filteredPlants.length > 3 &&
+                <PlantsList plants={filteredPlants.slice(0,6)}/>
+                }
             </>
             }
                 <InfiniteScroll
@@ -84,9 +87,12 @@ export function App() {
                     dataLength={plants.length}
                     next={fetchMoreData}
                     hasMore={true}
-                    loader={<h4>Loading...</h4>}
+                    loader={' '}
                 >
-                    <PlantsList plants={filteredPlants.slice(3)}/>
+                    {
+                        filteredPlants.length > 3 &&
+                    <PlantsList plants={filteredPlants.slice(0,-3)}/>
+                    }
                 </InfiniteScroll>
         </div>
     </body>
