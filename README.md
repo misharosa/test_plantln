@@ -6,7 +6,6 @@ Layout for additional help grid, flex. Sass-preprocessor.
 [DEMO LINK](https://misharosa.github.io/test_plantln/)
 <br/>
 [Figma](https://www.figma.com/file/KtzICEGlTEoXBJlD1Vid8X/PlantIn%2F-Test-Case?node-id=1%3A37)
-<br/>
 
 ##Dependencies:
 `Node v16.13.1` and higher
@@ -21,7 +20,6 @@ Layout for additional help grid, flex. Sass-preprocessor.
 <br/>
 
 ##Installing
-<br/>
 
 Fork and clone this repository
 <br/>
